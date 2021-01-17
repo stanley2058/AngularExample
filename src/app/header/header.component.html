@@ -5,8 +5,8 @@
             <mat-icon>more_vert</mat-icon>
         </button>
         <mat-menu #appMenu="matMenu">
-            <button mat-menu-item><mat-icon>list</mat-icon>Todo List</button>
-            <button mat-menu-item><mat-icon>info</mat-icon>About</button>
+            <button mat-menu-item (click)="navigate('')"><mat-icon>list</mat-icon>Todo List</button>
+            <button mat-menu-item (click)="navigate('about')"><mat-icon>info</mat-icon>About</button>
         </mat-menu>
     </div>
 </mat-toolbar>

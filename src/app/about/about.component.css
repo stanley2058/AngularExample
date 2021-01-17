@@ -1,0 +1,10 @@
+.about {
+    position: relative;
+    width: 300px;
+    top: 30px;
+    left: calc(50vw - 150px);
+}
+
+a {
+    text-decoration: none;
+}

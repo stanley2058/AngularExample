@@ -1,0 +1,55 @@
+.todoListBody {
+    position: relative;
+    width: 400px;
+    top: 30px;
+    left: calc(50vw - 200px);
+}
+
+.todo {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.addBtn {
+    margin-left: 10px;
+}
+
+.inputDiv {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.controls {
+    cursor: pointer;
+}
+.controls:hover {
+    color: purple;
+}
+
+.edit {
+    color: goldenrod;
+}
+.delete {
+    color: red;
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+.todoContext {
+    max-width: 250px;
+    overflow: auto;
+}
+
+@media screen and (max-width: 450px) {
+    .todoListBody {
+        width: 90vw;
+        left: 5vw;
+    }
+
+    .todoContext {
+        max-width: 30vw;
+    }
+}

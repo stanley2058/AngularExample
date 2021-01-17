@@ -9,17 +9,26 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { MatListModule } from '@angular/material/list';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatInputModule } from '@angular/material/input';
 
 // component import
 import { AppComponent } from './app.component';
 import { TodoPageComponent } from './todo-page/todo-page.component';
 import { HeaderComponent } from './header/header.component';
+import { AboutComponent } from './about/about.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
     AppComponent,
     TodoPageComponent,
-    HeaderComponent
+    HeaderComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
@@ -29,6 +38,12 @@ import { HeaderComponent } from './header/header.component';
     MatMenuModule,
     MatIconModule,
     MatButtonModule,
+    MatCardModule,
+    MatListModule,
+    MatCheckboxModule,
+    MatTooltipModule,
+    MatInputModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
   ],
   providers: [],
   bootstrap: [AppComponent]
